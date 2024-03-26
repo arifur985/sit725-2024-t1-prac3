@@ -1,0 +1,90 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express.js and Node.js with Materialize</title>
+  <link rel="stylesheet" href="/layout/design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><img src="/layout/images/profile.jpg" alt="Profile Image" class="profile-img"></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="container">
+    <h3>Main Content Area</h3>
+    <img src="/layout/images/main-image.jpg" alt="Main Image" class="responsive-img">
+    <button class="btn waves-effect waves-light" onclick="alert('You clicked the button!')">Click Me</button>
+  </div>
+
+  <!-- Card Section -->
+  <div class="container">
+    <h3>Products</h3>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="/layout/images/product1.jpg" alt="Product 1" class="product-img">
+            <span class="card-title">Product 1</span>
+          </div>
+          <div class="card-content">
+            <p>Product 1</p>
+            <p>Stock Available</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="/layout/images/product2.jpg" alt="Product 2" class="product-img">
+            <span class="card-title">Product 2</span>
+          </div>
+          <div class="card-content">
+            <p>Product 2</p>
+            <p>Stock Available</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="/layout/images/product3.jpg" alt="Product 3" class="product-img">
+            <span class="card-title">Product 3</span>
+          </div>
+          <div class="card-content">
+            <p>Product 3</p>
+            <p>Stock Available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Section -->
+  <div class="container">
+    <h3>Submit Form</h3>
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button class="btn waves-effect waves-light" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
